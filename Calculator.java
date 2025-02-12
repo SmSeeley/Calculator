@@ -5,17 +5,17 @@ public class Calculator {
     public static void main(String[] args) {
 
         //variables
-        int result = 0;
+        float result = 0;
 
 
         //create scanner object to read inputs
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        float num1 = scanner.nextFloat();
 
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        float num2 = scanner.nextFloat();
 
         //Ask for operation
         System.out.print("Please enter '+' or '-' or '*' or '/' to select an operation: ");

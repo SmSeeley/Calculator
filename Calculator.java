@@ -33,8 +33,14 @@ public class Calculator {
             result = num1 * num2;
             System.out.println("The total is " + result);
         } else if (operation.equals("/")) {
-            result = num1 / num2;
-            System.out.println("The total is " + result);
+            if (num2 == 0) {
+                System.out.println("Error: cant divide by 0");
+            } else {
+                result = num1 / num2;
+                System.out.println("The total is " + result);
+            }
+        }  else {
+            System.out.print("Invalid Choice");
         }
 
         //close scanner
